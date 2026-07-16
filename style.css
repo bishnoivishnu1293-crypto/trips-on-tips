@@ -1,0 +1,34 @@
+/* Core Page Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #1a1a2e;
+  color: #ffffff;
+}
+
+/* Ensure links styled as buttons look clean */
+a {
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* Table styling cleanup */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Dropdown / Details element styling */
+details summary::-webkit-details-marker {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #4a5568;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
