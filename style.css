@@ -1,34 +1,56 @@
-/* Core Page Reset */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-color: #1a1a2e;
-  color: #ffffff;
+ #landingPage{
+    position:fixed;
+    inset:0;
+    background:linear-gradient(135deg,#0f172a,#1a1a2e,#16213e);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    z-index:9999;
+    padding:30px;
 }
 
-/* Ensure links styled as buttons look clean */
-a {
-  display: inline-block;
-  cursor: pointer;
-  transition: background 0.2s ease;
+#landingPage h1{
+    font-size:60px;
+    margin-bottom:15px;
+    color:white;
 }
 
-/* Table styling cleanup */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+#landingPage p{
+    max-width:700px;
+    color:#d1d5db;
+    line-height:1.8;
+    font-size:20px;
+    margin-bottom:40px;
 }
 
-/* Dropdown / Details element styling */
-details summary::-webkit-details-marker {
-  display: inline-block;
-  margin-right: 5px;
+#startBtn{
+    padding:16px 42px;
+    border:none;
+    border-radius:50px;
+    background:#3b82f6;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
 }
 
-details[open] summary {
-  border-bottom: 1px solid #4a5568;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
+#startBtn:hover{
+    background:#2563eb;
+    transform:translateY(-4px);
+}
+
+.fadeOut{
+    animation:fadeOut .8s forwards;
+}
+
+@keyframes fadeOut{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+        visibility:hidden;
+    }
 }
