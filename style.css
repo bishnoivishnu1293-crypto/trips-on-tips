@@ -1,4 +1,4 @@
- #landingPage{
+ .landingPage{
     position:fixed;
     inset:0;
     background:linear-gradient(135deg,#0f172a,#1a1a2e,#16213e);
