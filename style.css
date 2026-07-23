@@ -1,4 +1,4 @@
- .landingPage{
+ #landingPage{
     position:fixed;
     inset:0;
     background:linear-gradient(135deg,#0f172a,#1a1a2e,#16213e);
@@ -40,33 +40,7 @@ scroll-behavior:smooth;
     cursor:pointer;
     transition:.3s;
 }
-.card{
-
-animation:float 3s ease-in-out infinite;
-
-}
-
-@keyframes float{
-
-0%{
-
-transform:translateY(0);
-
-}
-
-50%{
-
-transform:translateY(-8px);
-
-}
-
-100%{
-
-transform:translateY(0);
-
-}
-
-}
+ 
 
 #startBtn:hover{
     background:#2563eb;
